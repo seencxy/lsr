@@ -281,13 +281,6 @@ func GetTwitterInfo(client http.Client, auth_token string) ([]*http.Cookie, stri
 		return nil, "", err
 	}
 
-	//log.Println(do.StatusCode)
-	//log.Println(do.Cookies())
-	//
-	//if do.StatusCode == 302 {
-	//	return nil, "", errors.New("账号需要认证...")
-	//}
-
 	// 获取ct0
 	var ct0 string
 	for _, v := range do.Cookies() {
