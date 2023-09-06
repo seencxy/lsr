@@ -10,10 +10,10 @@ import (
 // yescapcha实例代码
 func main() {
 
-	clientKey := "5a1c753cc414fc4872650d2f066e88bea15d011125689"
+	clientKey := ""
 	taskType := "HCaptchaTaskProxyless"
-	websiteURL := "https://dashboard.alt.technology/flashlayers/altitude/create?usecase=generic&method=custom&tier=RESTAKING_TRIAL"
-	websiteKey := "a7f3edce-9191-4d46-878e-e14fa24ab3e1"
+	websiteURL := ""
+	websiteKey := ""
 
 	client := http.Client{}
 	taskID, err := common.CreateTask(client, clientKey, websiteURL, websiteKey, taskType)

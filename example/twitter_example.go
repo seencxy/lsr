@@ -17,22 +17,22 @@ func main() {
 		},
 	}
 
-	message := twitter.CreateRetweetMessage(client, "this is lsr", "cd682646f2d10b5914817fbda078894b9acb4a74", "https://twitter.com/heyibinance/status/1652232554844413956")
+	message := twitter.CreateRetweetMessage(client, "this is lsr", "", "")
 	if message == 200 {
 		log.Println("评论成功...")
 	}
 
-	user := twitter.FollowUser(client, "cd682646f2d10b5914817fbda078894b9acb4a74", "https://twitter.com/heyibinance")
+	user := twitter.FollowUser(client, "", "")
 	if user == 200 {
 		log.Println("关注用户成功...")
 	}
 
-	retweet := twitter.CreateRetweet(client, "cd682646f2d10b5914817fbda078894b9acb4a74", "https://twitter.com/heyibinance/status/1652232554844413956")
+	retweet := twitter.CreateRetweet(client, "", "")
 	if retweet == 200 {
 		log.Println("转推帖子成功...")
 	}
 
-	tweet := twitter.FavoriteTweet(client, "cd682646f2d10b5914817fbda078894b9acb4a74", "https://twitter.com/heyibinance/status/1652232554844413956")
+	tweet := twitter.FavoriteTweet(client, "", "")
 	if tweet == 200 {
 		log.Println("喜欢帖子成功...")
 	}

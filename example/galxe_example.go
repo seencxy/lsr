@@ -10,12 +10,12 @@ import (
 )
 
 func main() {
-	address := "0x8f78E007b01a026982754c6C418746c0b2fB5447"
-	prv := "200e4c5ec426890c71b2510f88744cab49e41ee0a681b74d14cca96735619704"
-	auth_token := "c4486c004b8931960f231cbe927593bcf9b1ab67"
+	address := ""
+	prv := ""
+	auth_token := ""
 	followUser := "https://twitter.com/LLshuorong"
-	post := "https://twitter.com/LLshuorong/status/1692535752067027128"
-	dc_token := "MTE0NjI2ODExNDI1OTAzNDEyMg.GMwKp9.QEVPMLUyGqdEAXnh2RIkeObmD60wzCt0kXmbo0"
+	post := ""
+	dc_token := ""
 
 	// 生成客户端
 	client := http.Client{
