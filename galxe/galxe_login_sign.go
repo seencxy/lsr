@@ -26,7 +26,7 @@ func GalxeLoginSign(client http.Client, address string, prv string) (string, err
 	expireTime := time.Now().Add(7 * 24 * time.Hour).UTC().Format("2006-01-02T15:04:05.999Z")
 	messageSign = strings.Replace(messageSign, "2023-09-02T06:49:41.065Z", expireTime, 1)
 
-	personalSign, err := common.SignMessage(prv, messageSign)
+	personalSign, err := common.EcdsaSignMessage(prv, messageSign)
 	if err != nil {
 		return "", err
 	}
