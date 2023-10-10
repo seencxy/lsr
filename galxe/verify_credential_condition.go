@@ -29,7 +29,7 @@ type VerifyCredentialConditionResponse struct {
 }
 
 // 验证该活动的该列表是否完成
-func VerifyCredentialCondition(client http.Client, auth string, CampaignId string, address string, ConditionIndex int, CredentialGroupId string) bool {
+func VerifyCredentialCondition(client http.Client, auth string, CampaignId string, address string, ConditionIndex int, CredentialGroupId string) (bool, error) {
 	data := VerifyCredentialConditionRequest{
 		OperationName: "VerifyCredentialCondition",
 		Query:         "mutation VerifyCredentialCondition($input: VerifyCredentialGroupConditionInput!) {\n  verifyCondition(input: $input)\n}\n",
@@ -57,13 +57,13 @@ func VerifyCredentialCondition(client http.Client, auth string, CampaignId strin
 
 	marshal, err := json.Marshal(data)
 	if err != nil {
-		return false
+		return false, err
 	}
 
 	// 创建请求
 	request, err := http.NewRequest("POST", "https://graphigo.prd.galaxy.eco/query", bytes.NewReader(marshal))
 	if err != nil {
-		return false
+		return false, err
 	}
 
 	// 设置头部
@@ -76,24 +76,24 @@ func VerifyCredentialCondition(client http.Client, auth string, CampaignId strin
 
 	all, err := client.Do(request)
 	if err != nil {
-		return false
+		return false, err
 	}
 
 	if all.StatusCode != 200 {
-		return false
+		return false, err
 	}
 
 	readAll, err := io.ReadAll(all.Body)
 	if err != nil {
-		return false
+		return false, err
 	}
 
 	var body VerifyCredentialConditionResponse
 
 	err = json.Unmarshal(readAll, &body)
 	if err != nil {
-		return false
+		return false, err
 	}
 
-	return body.Data.VerifyCondition
+	return body.Data.VerifyCondition, nil
 }
