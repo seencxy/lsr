@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
+	"log"
 	"net/http"
 )
 
@@ -245,6 +246,8 @@ func CampaignDetailAll(client http.Client, auth string, address string, id strin
 	if err != nil {
 		return *new(CampaignDetailAllResponse), err
 	}
+
+	log.Println(string(readAll))
 
 	var body CampaignDetailAllResponse
 
