@@ -31,8 +31,8 @@ func main() {
 			VerifyingContract: "0x10Fb8F3e8585AFf245289Ccc36727be0430052C8",
 		},
 		Message: apitypes.TypedDataMessage{
-			"from":  "0x10Fb8F3e8585AFf245289Ccc36727be0430052C8",
-			"to":    "0x10Fb8F3e8585AFf245289Ccc36727be0430052C8",
+			"from":  "0x51031DfAB19d500006FD61747D8f5391259aF148",
+			"to":    "0x6F86f8528344415EB31B9C958fc927BDd7eC72FF",
 			"value": big.NewInt(12345),
 		},
 	}

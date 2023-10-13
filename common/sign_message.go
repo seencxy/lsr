@@ -48,6 +48,7 @@ func Eip712SignMessage(typedData apitypes.TypedData, prv string) (string, error)
 func eip712Hash(typedData apitypes.TypedData) []byte {
 	domainSeparator, _ := typedData.HashStruct("EIP712Domain", typedData.Domain.Map())
 	messageHash, _ := typedData.HashStruct(typedData.PrimaryType, typedData.Message)
+
 	return crypto.Keccak256(bytes.Join([][]byte{
 		[]byte("\x19\x01"),
 		domainSeparator[:],
@@ -68,3 +69,5 @@ func ToHexOrDecimal256(value int64) *math.HexOrDecimal256 {
 	bigVal := big.NewInt(value)
 	return (*math.HexOrDecimal256)(bigVal)
 }
+
+// 0xf7b0c2662bd1be2c35b12e1ac2406757084b339c3758b4b7719f1823b76192d7120eba0c5cb8edf8ca92a53b8e40716b6dac0849e2b23ea8d7ec350042101
