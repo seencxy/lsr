@@ -8,7 +8,7 @@ import (
 	"regexp"
 )
 
-// 转推
+// CreateRetweet 转推
 func CreateRetweet(client http.Client, auth_token string, referer string) int {
 	// 获取twitter信息
 	cookies, gid, err := GetTwitterInfo(client, auth_token)

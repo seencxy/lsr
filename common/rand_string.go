@@ -2,7 +2,7 @@ package common
 
 import "math/rand"
 
-// 生成字符串随机数
+// GenerateRandomString 生成字符串随机数
 func GenerateRandomString(length int) string {
 	// 首先定义随机范围
 	const charset = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
