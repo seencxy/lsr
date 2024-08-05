@@ -35,7 +35,7 @@ func UnlockUser(client http.Client, auth_token string, referer string) int {
 	data.Set("skip_status", "1")
 	data.Set("user_id", uid)
 
-	newRequest, err := http.NewRequest("POST", "https://twitter.com/i/api/1.1/friendships/destroy.json", bytes.NewBufferString(data.Encode()))
+	newRequest, err := http.NewRequest("POST", "https://x.com/i/api/1.1/friendships/destroy.json", bytes.NewBufferString(data.Encode()))
 	if err != nil {
 		return 500
 	}
@@ -58,7 +58,7 @@ func UnlockUser(client http.Client, auth_token string, referer string) int {
 	newRequest.Header.Set("sec-ch-ua-platform", "\"macOS\"")
 	newRequest.Header.Set("referer", referer)
 	newRequest.Header.Set("sec-fetch-site", "same-origin")
-	newRequest.Header.Set("origin", "https://twitter.com")
+	newRequest.Header.Set("origin", "https://x.com")
 	newRequest.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 
 	for _, cookie := range cookies {

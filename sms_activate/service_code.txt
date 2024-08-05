@@ -1,0 +1,1130 @@
+full	Full Rent
+full	Full rent
+ig	Instagram+Threads
+fb	facebook
+tg	Telegram
+wa	Whatsapp
+go	Google,youtube,Gmail
+oi	Tinder
+hw	Alipay/Alibaba/1688
+mm	Microsoft
+lf	TikTok/Douyin
+ds	Discord
+wx	Apple
+am	Amazon
+li	Baidu
+wb	WeChat
+tw	Twitter
+ot	Any other
+ot	Any other call forwarding
+vk	vk.com
+uu	Wildberries
+ub	Uber
+mb	Yahoo
+md	Банки
+mt	Steam
+me	Line messenger
+pm	AOL
+ts	PayPal
+ka	Shopee
+vi	Viber
+ew	Nike
+bz	Blizzard
+dl	Lazada
+nv	Naver
+pf	pof.com
+ev	Picpay
+ok	ok.ru
+ya	Yandex call forwarding
+ya	Yandex
+yw	Grindr
+ma	Mail.ru
+qf	RedBook
+ju	Indomaret
+xh	OVO
+sn	OLX
+ki	99app
+ft	Букмекерские
+bw	Signal
+kf	Weibo
+dh	eBay
+tn	LinkedIN
+sg	OZON
+aor	OKX
+acz	Claude
+pc	Casino/bet/gambling
+abb	Coca-Cola
+nf	Netflix
+jg	Grab
+aqc	Omne by FWD
+gp	Ticketmaster
+nc	Payoneer
+kc	Vinted
+xy	Depop
+kt	KakaoTalk
+wr	Walmart
+yr	Miravia
+pd	IFood
+av	avito call forwarding
+av	avito
+ni	Gojek
+fd	Mamba
+fu	Snapchat
+aaa	Nubank
+zk	Deliveroo
+cq	Mercado
+mj	Zalo
+vz	Hinge
+nz	Foodpanda
+qq	Tencent QQ
+ad	Iti
+agm	CMB
+xj	СберМаркет
+ep	Temu
+ard	Maya
+yl	Yalla
+ir	Chispa
+tx	Bolt
+hu	Ukrnet
+uk	Airbnb
+rr	Wolt
+cy	РСА
+nl	Myntra
+mg	Magnit
+afm	myboost
+gf	GoogleVoice
+nt	Sravni
+mv	Fruitz
+zp	Pinduoduo
+abq	Upwork
+jr	Самокат
+mo	Bumble
+im	Imo
+df	Happn
+tu	Lyft
+ac	DoorDash
+aet	Greywoods
+ada	TRUTH SOCIAL
+jl	Hopi
+za	JDcom
+vd	Betfair
+xm	Лэтуаль
+gr	Astropay
+acm	Razer
+dr	OpenAI
+gj	Carousell
+bd	X5ID
+da	MTS CashBack
+do	Leboncoin
+yx	JTExpress
+ym	youla.ru call forwarding
+ym	youla.ru
+vm	OkCupid
+tl	Truecaller
+tc	Rambler
+bc	GCash
+hs	Asda
+xk	DiDi
+ua	BlaBlaCar
+fr	Dana
+afz	Klarna
+re	Coinbase
+ace	Tata Neu
+apj	Tinkoff VoiceKit
+acw	YouDo
+my	CAIXA
+zs	Bilibili
+acu	CityMall
+of	urent/jet/RuSharing
+cn	Fiverr
+lj	Santander
+ah	EscapeFromTarkov
+uf	Eneba
+arf	Enjoei
+kv	Rush
+cp	Uklon
+cw	PaddyPower
+ly	Olacabs
+xd	Tokopedia
+abe	Foodora
+aby	ITMS
+adj	RummyCircle
+bo	Wise
+acb	Spark Driver
+aiv	Remitly
+ex	Linode
+pr	Trendyol
+xs	GroupMe
+ari	Ring4
+ahe	Bunq
+aik	ZUS Coffee
+wh	TanTan
+abd	BeBoo
+kl	kolesa.kz
+aff	C6 Bank
+afn	roomster
+asl	Familhao
+rl	inDriver
+aoz	ReclameAQUI
+vp	Kwai
+vr	MotorkuX
+zl	Airtel
+fz	KFC
+tk	МВидео
+ie	bet365
+aoi	Cryptonow
+hc	MOMO
+agx	MeiQFashion
+ip	Burger King
+aeu	TheFork
+abg	PagBank
+cm	Prom
+aln	Remotasks
+zh	Zoho
+ate	GETAWARD
+em	ZéDelivery
+pu	Justdating
+asm	PH777
+fk	BLIBLI
+gq	Freelancer
+ng	FunPay
+ol	KazanExpress
+abw	SOKOLOV
+aba	Rappi
+xr	Tango
+dn	Paxful
+agj	Marktplaats
+rt	hily
+afs	Privalia
+ae	myGLO
+agk	Ipsos iSay
+agy	Pixels
+hb	Twitch
+kk	Idealista
+et	Clubhouse
+aje	CupidMedia
+ml	ApostaGanha
+aso	RL Solution
+apd	2dehands
+anf	ZoomInfo
+mx	SoulApp
+bl	BIGO LIVE
+afe	GovBr
+ib	Immowelt
+aid	Kwiff
+sh	Vkusvill
+ff	AVON
+afj	Laybuy
+zr	Papara
+qv	Badoo
+aq	Glovo
+rc	Skype
+il	IQOS
+lm	FarPost
+rd	Lenta
+jq	Paysafecard
+anq	Hitnspin
+ahi	Daki
+ane	Supercell
+ha	My11Circle
+ov	Beget
+zm	OfferUp
+arz	Cineplex
+zo	Kaggle
+at	Perfluence
+ls	Careem
+tz	Лейка
+aaq	Netease
+adt	willhaben
+abl	gpnbonus
+fj	Potato Chat
+ahb	Ubisoft
+amy	Отзовик
+xz	paycell
+mz	Zolushka
+aix	Move It
+amb	Vercel
+abj	Serasa
+aqt	Skrill
+abk	GMX
+abu	BPJSTK
+vy	Meta
+yj	eWallet
+sd	dodopizza
+aqg	Publix
+ns	Oldubil
+fs	Şikayet var
+aqq	MPSTATS
+amd	Smart
+apw	Bankiros
+dp	ProtonMail
+aev	Inshallah
+agc	VIMpay
+aeh	Аптека Апрель
+qy	Zhihu
+ue	Onet
+cj	Dotz
+yk	СпортМастер
+akr	Voi
+abh	UOL Host
+agl	Betano
+ajj	Rebtel
+ee	Twilio
+aos	Loloo
+ahl	Maxim
+ajn	Gopuff
+ke	Эльдорадо
+ael	Cloud Manager
+dj	LUKOIL-AZS
+aoh	ЮMoney
+afr	Ultragaz
+asa	Habby
+apq	WePoker
+qr	MEGA
+wc	Craigslist
+km	Rozetka
+alv	TIER
+wg	Skout
+yq	mail.com
+ef	Nextdoor
+aov	Zanimaika
+zb	FreeNow
+agn	Велобайк
+aob	Anthropic
+fv	Vidio
+aaz	Ozan
+aer	PlayerAuctions
+zd	Zilch
+acv	A23
+yu	Xiaomi
+dt	Delivery Club
+akt	xworldwallet
+ax	CrefisaMais
+aie	Фотострана
+ge	Paytm
+xu	RecargaPay
+als	Greggs
+aee	Amway
+asf	TextFree
+sb	Lamoda
+fh	Lalamove
+afk	Chevron
+ch	Pocket52
+br	Вкусно и Точка
+ij	Revolut
+oe	Codashop
+gk	AptekaRU
+abf	Parimatch
+afc	Bunda
+ahn	Рив Гош
+agg	OneForma
+ama	WooPlus
+app	ClassPass
+ahd	Midnite
+alm	Muzz
+lo	OPPO
+zg	Setel
+jy	Sorare
+ta	Wink
+uz	OffGamers
+xt	Flipkart
+ann	Bradesco
+ul	Getir
+ms	NovaPoshta
+co	Rediffmail
+rj	Детский мир
+afi	Ame Digital
+abc	Taptap Send
+qe	GG
+tf	Noon
+ww	BIP
+yy	Venmo
+anx	InfinitePay
+aro	GGPoker
+aar	Bearwww
+yi	Yemeksepeti
+alc	Facily
+bh	Uteka
+xx	Joyride
+akl	DOKU
+sc	Voggt
+aat	TamTam
+agd	Grailed
+cr	TenChat
+rn	neftm
+wz	FoxFord
+jv	Consultant
+sv	Dostavista
+vg	ShellBox
+adv	Cian
+akp	Her
+adh	Frizza
+ajr	boku
+ang	TOMORO COFFEE
+arb	Las Vegas Casino
+ti	cryptocom
+abn	Bybit
+aiw	Roblox
+jx	Swiggy
+ady	ТОКИО-CITY
+hx	AliExpress
+zn	Biedronka
+agh	Getnet
+abo	WEBDE
+aes	Золотое Яблоко
+rs	Lotus
+aab	BharatPe
+bm	MarketGuru
+adz	Шоколадница
+agr	Driffle
+akc	Paybis
+aiz	Brevo
+bn	Alfagift
+dy	Zomato
+yg	CourseHero
+abi	BytePlus
+agv	DoneDeal
+aok	NETELLER
+asb	YUEWEN 阅文集团
+aps	Skelbiu
+sl	СберАптека
+akd	Feels
+cb	Bazos
+yn	Allegro
+sa	AGIBANK
+un	humblebundle
+anb	Abastece-aí
+dz	Dominos Pizza
+yh	hh
+aki	tiketcom
+apg	Damai
+bq	Adani
+ih	TeenPattiStarpro
+ait	FeetFinder
+aml	Xbox
+dq	IceCasino
+st	Auchan
+ve	Dream11
+adu	Seznam
+anz	TopGun
+arr	Линии Любви
+aew	Flip
+aly	Bebeclub
+it	CashApp
+xn	Familia
+adg	Yono777
+ara	Shareful
+qh	Oriflame
+th	WestStein
+alf	WEBULL
+ll	888casino
+amv	MeSeems
+aqa	Satori
+bk	G2G
+pp	Huya
+zu	BigC
+ars	Bingo Plus
+apl	Sideline
+atm	Yotta
+mc	Michat
+uv	BinBin
+qi	32red
+alj	Spotify
+gm	Mocospace
+sz	Pivko24
+zx	CommunityGaming
+ago	Servify
+kx	Vivo
+nr	Tosla
+wp	163СOM
+aic	Whoscall
+jh	PingPong
+ow	RegRu
+uy	Meliuz
+adi	Zepto
+aka	LinkAja
+ani	Talabat
+qn	Blued
+apa	Exness
+asq	Warpcast
+fl	RummyLoot
+og	Okko
+amz	ImmoScout24
+zy	Nttgame
+lc	Subito
+ga	Roposo
+ca	SuperS
+es	iQIYI
+hl	Band
+abp	D5BET
+aag	Pockit
+an	Adidas
+aqm	Tala
+jz	Kaya
+qd	Taobao
+akz	Panvel
+wv	AIS
+amc	Fortune Slots
+vc	Banqi
+ads	GoChat
+hn	Bonia
+ape	Toutiao
+ata	Authy
+iq	icq
+zj	ROBINHOOD
+ala	GetResponse
+fg	IndianOil
+rk	Fotka
+mi	Zupee
+xv	Wish
+cg	Gemgala
+tp	IndiaGold
+we	DrugVokrug
+yo	Amasia
+abr	Privy
+ahj	Strato
+atc	Lemo
+dg	Mercari
+us	IRCTC
+aca	Sunlight
+adr	Boosty
+um	Belwest
+ws	Indodax
+ajs	GetPlus
+ahz	Кузбасс Онлайн
+atg	Mandi Bhav
+ajx	Kemnaker RI
+rf	Akudo
+ask	СВОЁ
+aht	MockGuru
+kz	NimoTV
+pl	Перекресток
+oh	MapleSEA
+ain	SpaceWeb
+fa	XadrezFeliz
+apr	Capital One
+anp	Blackcatcard
+io	ЗдравСити
+zz	DENT
+apt	Airwallex
+qx	WorldRemit
+aci	СберЗдоровье
+ao	UU163
+iy	FoodHub
+aqw	Edvantum
+alb	Guiche Web
+ut	Энергобум
+ux	Домовой
+ajm	Gener8
+zf	OnTaxi
+dd	CloudChat
+asv	Bilderlings
+uo	CafeBazaar
+bu	MonobankIndia
+acq	Astha Tea
+pg	NRJ Music Awards
+afq	MagaLu
+qa	MyFishka
+atk	ARCH
+ii	CashKaro
+aav	Alchemy
+hq	Magicbricks
+amg	SBI Card
+hh	Uplay
+anw	Premmia
+bp	GoFundMe
+bt	Alfa
+er	Kwork
+oo	LigaPro
+wq	Leboncoin1
+zw	Quack
+aex	Neon
+aky	GOMOFY
+atl	Watsons MY
+aen	Madslots
+akk	Dagangan
+ako	Ryde
+rp	hamrahaval
+te	eFood
+aqx	XL-PEarl
+acf	Winter Loan
+rw	BLS-SPAIN
+afu	ВсеИнструменты
+pn	CoffeeLike
+ado	Jasper Home Fashions
+wm	99Speed
+la	ssoidnet
+aqj	Vanaasthal
+afb	Nebu
+adm	FitCredit
+ati	Kullut
+rb	Tick
+hp	Meesho
+sm	YoWin
+aez	Shein
+ce	mosru
+ail	Смотрёшка
+px	Nifty
+hr	JKF
+abz	Дарить Легко
+arl	Mainvest
+aed	Booking.com
+ik	GuruBets
+ck	BeReal
+aip	AfreecaTV
+oc	DealShare
+act	Maxis
+aol	Paysera
+acd	Cloud.ru
+se	Feeld
+ajc	Почта России
+qc	Праймериз 2020
+ank	Garena
+di	Loanflix
+gi	Hotline
+iz	Global24
+ajh	WAUG
+anu	Edurators
+akw	WINDS
+aha	Angel One
+mr	Fastmail
+alr	Vson
+vj	Stormgain
+ct	КухняНаРайоне
+uw	Kirana
+alo	Profee
+ss	hezzl
+ix	Celcoin
+ahg	Credcesta
+ej	MrQ
+xp	MonetaRu
+ajb	Бери заряд
+dk	Pairs
+od	FWDMAX
+fw	99acres
+alt	Segari
+ais	DiDiFood
+sf	SneakersnStuff
+hi	JungleeRummy
+sq	KuCoinPlay
+kq	FotoCasa
+kw	Foody
+mu	MyMusicTaste
+aeq	Godrej
+af	TradeX
+wy	Yami
+kd	Author24
+ahc	START
+td	ChaingeFinance
+ed	Gamer
+ary	Presto
+aap	Tiptapp
+gv	Humta
+hy	Ininal
+js	GolosZa
+ajv	ShareParty
+arc	CHECK24
+gw	CallApp
+arv	DARKSIDE
+akq	Blank Street
+qj	Whoosh
+fq	Контур
+yv	IPLwin
+gu	Fora
+ur	MyDailyCash
+vt	Innomax
+mq	GMNG
+aei	Sharyat
+apy	Винлаб
+ty	Окей
+eo	Sizeer
+aqo	xREWARD
+tm	Akulaku
+adp	Cabify
+tt	Ziglu
+ro	PingCode
+aqr	SportEfir
+mw	Transfergo
+ajz	MotionPay
+aot	Diversity
+eu	LiveScore
+adx	FirstCry
+asd	Hongguo 红果短剧
+amk	GORDAN
+lw	MrGreen
+pv	Koshelek
+tr	Paysend
+aig	Five Surveys
+lk	PurePlatfrom
+rm	Faberlic
+vw	CoinField
+aox	Aukro
+zq	IndiaPlays
+si	Cita Previa
+aoj	Simply
+gs	SamsungShop
+amn	constitutioner
+adc	PlayOJO
+aaw	Aya Bank
+el	Bisu
+asw	ACSON
+fe	CliQQ
+iv	Inboxlv
+adl	EarnEasy
+ln	Grofers
+ajg	Zaymigo
+aho	Upland
+bs	TradeUP
+rv	Kotak811
+agt	Uralairlines
+yf	Citymobil
+qu	Agroinform
+amu	Glassbox
+jc	IVI
+eh	Telegram 2.0
+sx	Crowdtap
+aqp	Golden Plus GP
+cs	AgriDevelop
+amr	Univest
+asz	fonial
+sr	Starbucks
+arm	Cathay Pacific
+ql	CMTcuzdan
+sp	HappyFresh
+qg	MoneyPay
+amo	CoinFantasy
+afp	VFS GLOBAL
+age	Yetz Promo
+jf	Likee
+aoo	Pegasus Airlines
+de	Karusel
+aiu	GetNinjas
+asx	KIMGRES
+ant	Cashew
+ri	BillMill
+arp	Continente
+hk	4Fun
+ald	Nice88
+aga	Publi24
+agw	Adverts
+qb	Payberry
+aji	МИГРАНТ СЕРВИС
+wo	Parkplus
+sy	Brahma
+gl	GlobalTel
+yb	Система Город
+ahh	Cumbuca
+wf	YandexGo
+aiy	nloto
+mp	Winmasters
+acr	QwikCilver
+acx	VCollective
+vx	HeyBox
+asy	Fore Coffee
+aiq	Prime Opinion
+dc	YikYak
+gd	Surveytime
+abx	Kaching
+ajf	Bananatok
+oy	CashFly
+aon	Binance
+lp	Algida
+hg	Switips
+dw	Divar
+ui	RuTube
+os	Dhani
+aqh	Rayobyte
+arg	Gappx
+xe	GalaxyChat
+aof	Guzman y Gomez
+amq	FRESHOOS
+aja	G2A
+xq	MPL
+ajp	AsiaMiles
+wt	IZI
+fo	MobiKwik
+ajo	CoffeeTea
+kp	HQ Trivia
+adw	Профи
+iw	MyLavash
+gg	PagSmile
+aoy	PLN Mobile
+ast	THXapp
+pa	Gamekit
+aqi	Cairon Fashion
+eq	Qoo10
+xl	Wmaraci
+nq	Trip
+su	LOCO
+uj	СhampionСasino
+lt	BitClout
+anc	VARUS
+aqy	SAPO
+adq	Uzum
+abt	ArenaPlus
+cu	炙热星河
+ay	Ruten
+lh	24betting
+pz	Lidl
+adb	PoshVine
+gy	MIYACHAT
+lq	Potato
+afy	Tuul
+ahv	Curve
+ass	CICIL
+rq	AptekiPlus
+tv	Flink
+aw	Taikang
+agz	Jiva Petani
+aqn	CashMyPic
+xf	LightChat
+apz	Wynk
+alp	Mera Gaon
+wu	PrivetMir
+ps	Zdorov
+ark	SageMaker Studio Lab
+aqv	Doorverse
+bg	MIXMART
+pw	SellMonitor
+ci	redBus
+ic	JoGo
+fp	Phound
+le	E bike Gewinnspiel
+hz	Drom
+vl	Ортека
+ak	Douyu
+afh	mPokket
+oj	LoveRu
+amm	punjab citizen
+ahp	Handyticket
+aqf	Coze
+sw	NCsoft
+apm	Index
+agi	Njuškalo
+gz	LYKA
+ai	CELEBe
+agu	Marlboro
+ab	Alibaba
+aqk	Richkart
+ahw	Zasilkovna
+anv	Shield
+bf	Keybase
+ale	Lydia
+no	Virgo
+jj	Aitu
+ei	Taksheel
+aqu	KBX
+jp	Rbt
+nb	Верный
+aqz	BlazeTech
+amx	TANK
+qk	Bit
+qo	Moneylion
+xo	Notifire
+cv	WashXpress
+ams	GlowRoad
+ack	RegainRX
+nw	Ximalaya
+apk	Liberty
+api	KKTIX
+gh	GyFTR
+jb	Wing Money
+anj	Gemini
+ali	StockyDodo
+jo	SticPay
+ks	Hirect
+lr	Okta
+xw	Taki
+uh	Yubo
+amt	Moneyview
+aas	XXGame
+agp	hdfcbank
+ez	GoerliFaucet
+amp	VerifyKit
+aoa	Hicard
+aeg	Flowwow
+xc	SynotTip
+amh	MitID
+akj	Easycash
+yd	米画师Mihuashi
+apb	eToro
+ne	Coindcx
+afa	CDEK
+pq	CDkeys
+apc	iGameBUY
+aft	Neocrypto
+cd	SpotHit
+ph	SnappFood
+apf	Carrefour
+ags	Abbott
+atb	Movider
+aij	NEQUI
+asn	Boletomovil
+mk	LongHu
+akb	Gurmanika
+alx	NutriClub
+ash	Pinjam Yuk
+arq	Adapundi
+qz	Faceit
+wj	1хbet
+jn	CloudBet
+aim	Firebase
+au	Haraj
+alw	Vida
+gb	YouStar
+kb	kufarby
+fx	PGbonus
+pj	Podeli
+ky	SpatenOktoberfest
+agf	Meitu
+apn	Beboo
+aeb	Shine Brand Seeds
+akg	Book My Play
+alh	Lion Parcel
+anl	AttaPoll
+kh	Bukalapak
+ra	KeyPay
+aqb	Pinoy Peso
+up	Magnolia
+afx	Gamesofa
+aa	Probo
+akn	Chakra Rewards
+rg	Porbet
+gt	Gett
+bb	LazyPay
+aef	Long Drive Cars
+po	premium.one
+ho	Cathay
+bx	Dosi
+any	FastEarn
+op	MIRATORG
+be	СберМегаМаркет
+nm	Thisshop
+dm	Iwplay
+asu	Replit
+jm	mzadqatar
+ana	Sicredi
+zt	Budweiser
+xg	FortunaSK
+ajd	Bankera
+ze	Shpock
+mh	Ашан
+sj	HandyPick
+ahk	БлинБери
+nu	Stripe
+bj	Вита экспресс
+ame	Discover Hong Kong
+lg	MediBuddy
+acl	swissmoney
+hm	Globus
+aoe	Sendwave
+rz	EasyPay
+akf	Ollis
+qs	МирЗнакомств
+anm	CaltexGO
+bi	勇仕网络Ys4fun
+ake	DIKIDI
+xi	InFund
+nn	Giftcloud
+aek	EnerGO
+cc	Quipp
+vq	LadyMaria
+ku	RoyalWin
+aru	UNNI 강남언니
+ey	miloan
+bv	Metro
+aow	Geekay
+wl	YouGotaGift
+vf	Q12 Trivia
+ny	BitcoinBon
+kn	Verse
+ji	Monobank
+xb	RummyOla
+amw	Tise
+akx	Sony LIV
+sk	Skroutz
+zi	LoveLocal
+aep	Slickcall
+aks	Hanya
+ea	JamesDelivery
+hf	Cleartrip
+akh	Prenagen Club
+qt	MoneyСontrol
+alq	Etsy
+abv	PlayZone
+en	Hermes
+vs	WinzoGame
+nj	FreshKarta
+az	CityBase
+acj	TeriMeriChoice
+ahm	Eureka
+aog	Naukri
+eb	Voltz
+adk	Khatabook
+rx	Sheerid
+ade	Magicpin
+afo	KION
+ajl	av100pro
+ia	Socios
+aco	AR Lens
+aey	Next
+ja	Weverse
+cz	Getmega
+ye	ZaleyCash
+afw	Packeta
+ahq	Bitget
+alk	HUGESoft
+agq	Bajaj Finserv
+atd	BUKA
+arn	GFK
+aih	Fups
+fi	Dundle
+aau	RockeTreach
+aax	Boyaa
+ru	HOP
+he	Mewt
+ahr	This Fate
+fx	PGbonus call forwarding
+iu	Bykea
+aph	Openbudget
+aay	JioMart
+aio	Prakerja
+gc	TradingView
+arj	e2zSTORE
+vb	Кораблик
+acs	Tata CLiQ Palette
+acp	BonusLink
+aem	AstraPay
+ami	TEAMORU
+amj	m panels
+lb	Mailru Group
+vo	Brand20ua
+aea	HungryPanda
+fm	Touchance
+vn	Yaay
+ajq	MyValue
+acn	Gringo
+lz	Things
+aec	AaHIRA Fashion
+ahs	1and1
+jd	GiraBank
+aqe	PeraMoo
+are	Seated
+gn	A9A
+oq	Vlife
+db	ezbuy
+ou	Gabi
+acg	KoronaPay
+afv	Джилекс
+ys	ZCity
+wn	GameArena
+aju	Daya Auto
+py	Monese
+dx	Powerkredite
+fy	Mylove
+je	Nanovest
+ahf	GAIL`s Bakery
+lu	Crickpe
+ht	Bitso
+aqs	BetOnRed
+ug	Fiqsy
+atj	Klin
+jw	Br777
+nk	Gittigidiyor
+yz	Около
+tq	Swvl
+so	RummyWealth
+acc	LuckyLand Slots
+asr	LA VOZ DEL PACIENTE
+fc	PharmEasy
+kg	FreeChargeApp
+apo	Netmarble
+apu	LIC Games
+ry	McDonalds
+asp	PhonePe
+aou	IT Business Group
+hj	Stoloto
+lv	Megogo
+ath	Samarth Diamond App
+alz	CasinoAndFriends
+agb	Smiles
+aii	Hinge Dating
+alg	Ankama
+yp	Payzapp
+ajy	All Access
+ano	Shopify
+hd	MarketPapa
+ld	Cashmine
+ahy	Fliff
+abs	Playerzpot
+lx	DewuPoison
+gx	Hepsiburadacom
+aom	Monzo
+zv	Digikala
+tj	dbrUA
+va	SportGully
+adn	Janganana
+pb	SkyTV
+aej	Autoru
+wk	Mobile01
+uc	Tatneft
+ko	AdaKami
+arh	Super Ace
+kj	YAPPY
+nh	AlloBank
+qp	Максавит
+arx	Zinia
+qm	RosaKhutor
+vh	Штолле
+cf	irancell
+ajk	Venteny
+aql	Xigua Video 西瓜视频
+rh	Ace2Three
+asg	Asetku
+akm	LOTTE Mart
+ase	Collection Pot
+du	AUBANK
+aoq	JB Hi-Fi
+air	TipTip
+xa	УлыбкаРадуги
+eg	ContactSys
+ox	Damejidlo
+acy	Airtime
+oz	Poshmark
+abm	Утконос
+arw	ASA
+afd	Astra Otoshop
+ajt	Город
+amf	Acko
+aeo	Allofresh
+pt	Bitaqaty
+mf	Weidian
+ahx	Bitrue
+aqd	Pesohere
+ajw	INDOBA
+ec	RummyCulture
+np	Siply
+ud	Disney Hotstar
+om	Corona
+atf	Asharfi Design
+vv	Seosprint
+aif	Royal Canin
+adf	Punjab Timber Traders
+anh	Cadbury
+ar	Wondermart
+kr	Eyecon
+wd	CasinoPlus
+jt	TurkiyePetrolleri
+ob	Onlinerby
+afl	Vsesmart
+cl	UWIN
+dv	NoBroker
+aj	OneAset
+mn	RRSA
+afg	Luck
+uq	TopDetal
+alu	BC Game
+ba	Expressmoney
+asi	OMODA
+cx	Icrypex
+ach	Плайт

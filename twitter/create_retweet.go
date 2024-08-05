@@ -36,7 +36,7 @@ func CreateRetweet(client http.Client, auth_token string, referer string) int {
 	}
 
 	//创建一个请求体
-	request, err := http.NewRequest("POST", "https://twitter.com/i/api/graphql/ojPdsZsimiJrUGLR1sjUtA/CreateRetweet", bytes.NewReader(marshal))
+	request, err := http.NewRequest("POST", "https://x.com/i/api/graphql/ojPdsZsimiJrUGLR1sjUtA/CreateRetweet", bytes.NewReader(marshal))
 	if err != nil {
 		log.Println("failed to create request:", err.Error())
 		return 500
@@ -60,7 +60,7 @@ func CreateRetweet(client http.Client, auth_token string, referer string) int {
 	request.Header.Set("sec-ch-ua-platform", "\"macOS\"")
 	request.Header.Set("referer", referer)
 	request.Header.Set("sec-fetch-site", "same-origin")
-	request.Header.Set("origin", "https://twitter.com")
+	request.Header.Set("origin", "https://x.com")
 	request.Header.Set("content-type", "application/json")
 
 	for _, cookie := range cookies {

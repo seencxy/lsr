@@ -51,7 +51,7 @@ func FavoriteTweet(client http.Client, auth_token string, referer string) int {
 		return 500
 	}
 
-	newRequest, err := http.NewRequest("POST", "https://twitter.com/i/api/graphql/lI07N6Otwv1PhnEgXILM7A/FavoriteTweet", bytes.NewReader(jsonData))
+	newRequest, err := http.NewRequest("POST", "https://x.com/i/api/graphql/lI07N6Otwv1PhnEgXILM7A/FavoriteTweet", bytes.NewReader(jsonData))
 	if err != nil {
 		log.Println("failed to create request:", err.Error())
 		return 500
@@ -75,7 +75,7 @@ func FavoriteTweet(client http.Client, auth_token string, referer string) int {
 	newRequest.Header.Set("sec-ch-ua-platform", "\"macOS\"")
 	newRequest.Header.Set("referer", referer)
 	newRequest.Header.Set("sec-fetch-site", "same-origin")
-	newRequest.Header.Set("origin", "https://twitter.com")
+	newRequest.Header.Set("origin", "https://x.com")
 	newRequest.Header.Set("content-type", "application/json")
 
 	for _, cookie := range cookies {

@@ -134,7 +134,7 @@ func CreateRetweetMessage(client http.Client, info string, auth_token string, re
 	}
 
 	//创建一个请求体
-	request, err := http.NewRequest("POST", "https://twitter.com/i/api/graphql/PIZtQLRIYtSa9AtW_fI2Mw/CreateTweet", bytes.NewReader(marshal))
+	request, err := http.NewRequest("POST", "https://x.com/i/api/graphql/PIZtQLRIYtSa9AtW_fI2Mw/CreateTweet", bytes.NewReader(marshal))
 	if err != nil {
 		return 500
 	}
@@ -157,7 +157,7 @@ func CreateRetweetMessage(client http.Client, info string, auth_token string, re
 	request.Header.Set("sec-ch-ua-platform", "\"macOS\"")
 	request.Header.Set("referer", referer)
 	request.Header.Set("sec-fetch-site", "same-origin")
-	request.Header.Set("origin", "https://twitter.com")
+	request.Header.Set("origin", "https://x.com")
 	request.Header.Set("content-type", "application/json")
 
 	for _, cookie := range cookies {

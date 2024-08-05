@@ -136,7 +136,7 @@ func FollowUser(client http.Client, auth_token string, referer string) int {
 	data.Set("skip_status", "1")
 	data.Set("user_id", uid)
 
-	newRequest, err := http.NewRequest("POST", "https://twitter.com/i/api/1.1/friendships/create.json", bytes.NewBufferString(data.Encode()))
+	newRequest, err := http.NewRequest("POST", "https://x.com/i/api/1.1/friendships/create.json", bytes.NewBufferString(data.Encode()))
 	if err != nil {
 		return 500
 	}
@@ -159,7 +159,7 @@ func FollowUser(client http.Client, auth_token string, referer string) int {
 	newRequest.Header.Set("sec-ch-ua-platform", "\"macOS\"")
 	newRequest.Header.Set("referer", referer)
 	newRequest.Header.Set("sec-fetch-site", "same-origin")
-	newRequest.Header.Set("origin", "https://twitter.com")
+	newRequest.Header.Set("origin", "https://x.com")
 	newRequest.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 
 	for _, cookie := range cookies {
@@ -181,7 +181,7 @@ func FollowUser(client http.Client, auth_token string, referer string) int {
 
 // 返回用户信息
 func GetUserInfo(client http.Client, auth_token string, referer string) (string, error) {
-	split := strings.Split(referer, "https://twitter.com/")
+	split := strings.Split(referer, "https://x.com/")
 	params := GetUserInfoRequest{
 		ScreenName:                                                split[1],
 		WithSafetyModeUserFields:                                  true,
@@ -197,7 +197,7 @@ func GetUserInfo(client http.Client, auth_token string, referer string) (string,
 		ResponsiveWebGraphqlTimelineNavigationEnabled:             true,
 		WithAuxiliaryUserLabels:                                   false,
 	}
-	baseURL := "https://twitter.com/i/api/graphql/G3KGOASz96M-Qu0nwmGXNg/UserByScreenName?"
+	baseURL := "https://x.com/i/api/graphql/G3KGOASz96M-Qu0nwmGXNg/UserByScreenName?"
 
 	queryParams := url.Values{}
 	queryParams.Set("variables", fmt.Sprintf(`{"screen_name":"%s","withSafetyModeUserFields":%t}`, params.ScreenName, params.WithSafetyModeUserFields))
@@ -232,7 +232,7 @@ func GetUserInfo(client http.Client, auth_token string, referer string) (string,
 	request.Header.Set("sec-ch-ua-platform", "\"macOS\"")
 	request.Header.Set("referer", referer)
 	request.Header.Set("sec-fetch-site", "same-origin")
-	request.Header.Set("origin", "https://twitter.com")
+	request.Header.Set("origin", "https://x.com")
 	request.Header.Set("content-type", "application/json")
 
 	for _, cookie := range cookies {
@@ -268,8 +268,8 @@ func GetUserInfo(client http.Client, auth_token string, referer string) (string,
 
 // 获取twitter用户信息
 func GetTwitterInfo(client http.Client, auth_token string) ([]*http.Cookie, string, error) {
-	//首先对https://twitter.com/home发送一个请求获取ct0
-	request, err := http.NewRequest("GET", "https://twitter.com/home", nil)
+	//首先对https://x.com/home发送一个请求获取ct0
+	request, err := http.NewRequest("GET", "https://x.com/home", nil)
 	if err != nil {
 		return nil, "", err
 	}
