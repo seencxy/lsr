@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/seencxy/lsr/sms-activate/api"
-	"github.com/seencxy/lsr/sms-activate/utils"
+	"github.com/seencxy/lsr/sms_activate/api"
+	"github.com/seencxy/lsr/sms_activate/utils"
 	"log"
 	"net/http"
 )
