@@ -6,9 +6,8 @@ import (
 	"log"
 )
 
-// yescapcha实例代码
 func main() {
-
+	// clientKey can from env
 	clientKey := ""
 	taskType := "HCaptchaTaskProxyless"
 	websiteURL := ""
