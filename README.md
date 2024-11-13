@@ -13,6 +13,7 @@ Go self-use auxiliary library
 - galxe
 - yescaptcha
 - mailtm
+- inject([fork](https://github.com/facebookarchive/inject))
 - more...
 
 ## Table of Contents
