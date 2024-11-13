@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -32,6 +33,10 @@ type CaptchaClient struct {
 }
 
 func New(_clientKey string) *CaptchaClient {
+	// if _clientKey invalid,try get key form env
+	if _clientKey == "" {
+		_clientKey = os.Getenv("CaptchaKey")
+	}
 	return &CaptchaClient{
 		client:    &http.Client{},
 		clientKey: _clientKey,
