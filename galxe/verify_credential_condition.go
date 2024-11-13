@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-// 验证完成请求参数
+// VerifyCredentialConditionRequest 验证完成请求参数
 type VerifyCredentialConditionRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {
@@ -21,14 +21,14 @@ type VerifyCredentialConditionRequest struct {
 	Query string `json:"query"`
 }
 
-// 验证完成响应参数
+// VerifyCredentialConditionResponse 验证完成响应参数
 type VerifyCredentialConditionResponse struct {
 	Data struct {
 		VerifyCondition bool `json:"verifyCondition"`
 	} `json:"data"`
 }
 
-// 验证该活动的该列表是否完成
+// VerifyCredentialCondition 验证该活动的该列表是否完成
 func VerifyCredentialCondition(client http.Client, auth string, CampaignId string, address string, ConditionIndex int, CredentialGroupId string) (bool, error) {
 	data := VerifyCredentialConditionRequest{
 		OperationName: "VerifyCredentialCondition",

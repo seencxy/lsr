@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-// 转账
+// Transfer 转账
 func Transfer(address, prv string, rpc string, toAddress string, chainId int, value float64) (bool, error) {
 	// 连接到 bnb 网络
 	client, err := ethclient.Dial(rpc)

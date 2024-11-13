@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-// 查找用户信息
+// FollowUserResponse 查找用户信息
 type FollowUserResponse struct {
 	Data struct {
 		User struct {
@@ -91,7 +91,7 @@ type FollowUserResponse struct {
 	} `json:"data"`
 }
 
-// 定义一个结构体来表示请求的参数
+// GetUserInfoRequest 定义一个结构体来表示请求的参数
 type GetUserInfoRequest struct {
 	ScreenName                                                string
 	WithSafetyModeUserFields                                  bool
@@ -108,7 +108,7 @@ type GetUserInfoRequest struct {
 	WithAuxiliaryUserLabels                                   bool
 }
 
-// 实现twitter关注账号
+// FollowUser 实现twitter关注账号
 func FollowUser(client http.Client, auth_token string, referer string) int {
 	cookies, gid, err := GetTwitterInfo(client, auth_token)
 	if err != nil {
@@ -179,7 +179,7 @@ func FollowUser(client http.Client, auth_token string, referer string) int {
 	return 200
 }
 
-// 返回用户信息
+// GetUserInfo 返回用户信息
 func GetUserInfo(client http.Client, auth_token string, referer string) (string, error) {
 	split := strings.Split(referer, "https://x.com/")
 	params := GetUserInfoRequest{
@@ -266,7 +266,7 @@ func GetUserInfo(client http.Client, auth_token string, referer string) (string,
 	return data.Data.User.Result.RestId, nil
 }
 
-// 获取twitter用户信息
+// GetTwitterInfo 获取twitter用户信息
 func GetTwitterInfo(client http.Client, auth_token string) ([]*http.Cookie, string, error) {
 	//首先对https://x.com/home发送一个请求获取ct0
 	request, err := http.NewRequest("GET", "https://x.com/home", nil)
@@ -291,12 +291,3 @@ func GetTwitterInfo(client http.Client, auth_token string) ([]*http.Cookie, stri
 
 	return do.Cookies(), ct0, nil
 }
-
-//ANGLE ( NVIDIA GeForce RTX 3080 Direct3D12 vs_5_1 ps_5_1)
-//ANGLE ( AMD Radeon RX 6800 Direct3D11 vs_4_1 ps_4_1)
-//ANGLE ( NVIDIA GTX Titan Black Direct3D9Ex vs_3_0 ps_3_0)
-//ANGLE ( NVIDIA GeForce RTX 3070 OpenGL vs_4_0 ps_4_0)
-//ANGLE ( NVIDIA GeForce GTX 1080 OpenGL vs_5_0 ps_5_0)
-//ANGLE ( AMD Radeon RX 6900 XT Vulkan vs_5_0 ps_5_0)
-
-//405BD519903F94D38C0E620E8890A0A5

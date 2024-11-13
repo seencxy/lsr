@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-// 绑定邮箱请求参数
+// BindEmailRequest 绑定邮箱请求参数
 type BindEmailRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {
@@ -21,14 +21,14 @@ type BindEmailRequest struct {
 	Query string `json:"query"`
 }
 
-// 绑定邮箱请求参数
+// BindEmailResponse 绑定邮箱请求参数
 type BindEmailResponse struct {
 	Data struct {
 		UpdateEmail interface{} `json:"updateEmail"`
 	} `json:"data"`
 }
 
-// 绑定galxe邮箱
+// BindEmail 绑定galxe邮箱
 func BindEmail(client http.Client, address string, email string, code string, auth string) (bool, error) {
 	// 实例化请求参数
 	data := BindEmailRequest{

@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-// 获取galxe用户信息
+// BasicUserInfo 获取galxe用户信息
 // 获取用户信息 主要是检测twitter和email是否绑定
 // 返回四个参数 第一个是gid 第二个是是否绑定email 第三个是否绑定twitter  第四个是是否绑定dc
 func BasicUserInfo(client http.Client, address string, auth string) (string, bool, bool, bool, error) {
@@ -71,7 +71,7 @@ func BasicUserInfo(client http.Client, address string, auth string) (string, boo
 	return body.Data.AddressInfo.Id, body.Data.AddressInfo.HasEmail, body.Data.AddressInfo.HasTwitter, body.Data.AddressInfo.HasDiscord, nil
 }
 
-// BasicUserInfo请求体
+// BasicUserInfoRequest BasicUserInfo请求体
 type BasicUserInfoRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {
@@ -83,7 +83,7 @@ type BasicUserInfoRequest struct {
 	Query string `json:"query"`
 }
 
-// BasicUserInfo响应体
+// BasicUserInfoResponse BasicUserInfo响应体
 type BasicUserInfoResponse struct {
 	Data struct {
 		AddressInfo struct {

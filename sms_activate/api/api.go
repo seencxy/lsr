@@ -3,8 +3,8 @@ package api
 import (
 	"context"
 	"fmt"
+	"github.com/seencxy/lsr/sms_activate/pkg"
 	"net/http"
-	"sms-activate/pkg"
 	"strings"
 )
 

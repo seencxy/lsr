@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-// 发送邮箱验证码服务请求体
+// SendVerifyCodeRequest 发送邮箱验证码服务请求体
 type SendVerifyCodeRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {
@@ -26,14 +26,14 @@ type SendVerifyCodeRequest struct {
 	Query string `json:"query"`
 }
 
-// 发送邮箱验证码服务响应体
+// SendVerifyCodeResponse 发送邮箱验证码服务响应体
 type SendVerifyCodeResponse struct {
 	Data struct {
 		SendVerificationCode interface{} `json:"sendVerificationCode"`
 	} `json:"data"`
 }
 
-// 用于邮箱验证时发送邮箱
+// SendVerifyCode 用于邮箱验证时发送邮箱
 func SendVerifyCode(client http.Client, params CaptchaVerifyResponse, auth string, email string, address string) (bool, error) {
 	// 实例化请求参数
 	data := SendVerifyCodeRequest{

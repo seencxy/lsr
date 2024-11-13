@@ -9,7 +9,7 @@ import (
 	"net/http"
 )
 
-// 绑定twitter请求参数
+// BindTwitterRequest 绑定twitter请求参数
 type BindTwitterRequest struct {
 	Variables struct {
 		TweetText   string `json:"tweet_text"`
@@ -24,7 +24,7 @@ type BindTwitterRequest struct {
 	QueryID  string          `json:"queryId"`
 }
 
-// 绑定推特响应参数
+// BindTwitterResponse 绑定推特响应参数
 type BindTwitterResponse struct {
 	Data struct {
 		CreateTweet struct {
@@ -248,7 +248,7 @@ type BindTwitterResponse struct {
 	} `json:"data"`
 }
 
-// 尝试绑定twitter
+// BindTwitter 尝试绑定twitter
 func BindTwitter(client http.Client, auth_token string, gid string, address string, sign string) (bool, error) {
 	cookies, ct0, err := GetTwitterInfo(client, auth_token)
 	if err != nil {

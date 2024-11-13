@@ -7,7 +7,7 @@ import (
 	"net/http"
 )
 
-// Campaign详情请求参数
+// CampaignDetailAllRequest Campaign详情请求参数
 type CampaignDetailAllRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {
@@ -18,7 +18,7 @@ type CampaignDetailAllRequest struct {
 	Query string `json:"query"`
 }
 
-// Campaign详情响应参数
+// CampaignDetailAllResponse Campaign详情响应参数
 type CampaignDetailAllResponse struct {
 	Data struct {
 		Campaign struct {
@@ -199,7 +199,7 @@ type CampaignDetailAllResponse struct {
 	} `json:"data"`
 }
 
-// 实现获取Campaign详情
+// CampaignDetailAll 实现获取Campaign详情
 func CampaignDetailAll(client http.Client, auth string, address string, id string) (CampaignDetailAllResponse, error) {
 	data := CampaignDetailAllRequest{
 		OperationName: "CampaignDetailAll",

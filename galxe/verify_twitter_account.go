@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-// 验证推特账号请求参数
+// VerifyTwitterAccountRequest 验证推特账号请求参数
 type VerifyTwitterAccountRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {
@@ -20,7 +20,7 @@ type VerifyTwitterAccountRequest struct {
 	Query string `json:"query"`
 }
 
-// 验证推特账号响应参数
+// VerifyTwitterAccountResponse 验证推特账号响应参数
 type VerifyTwitterAccountResponse struct {
 	Data struct {
 		VerifyTwitterAccount struct {
@@ -32,7 +32,7 @@ type VerifyTwitterAccountResponse struct {
 	} `json:"data"`
 }
 
-// 实现twitter账号的绑定验证
+// VerifyTwitterAccount 实现twitter账号的绑定验证
 func VerifyTwitterAccount(client http.Client, address string, url string, auth string) (bool, error) {
 	data := VerifyTwitterAccountRequest{
 		OperationName: "VerifyTwitterAccount",

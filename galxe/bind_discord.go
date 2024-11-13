@@ -10,24 +10,24 @@ import (
 	"net/http"
 )
 
-// 绑定discord账号请求体
+// BindDiscordRequest 绑定discord账号请求体
 type BindDiscordRequest struct {
 	Permissions string `json:"permissions"`
 	Authorize   bool   `json:"authorize"`
 }
 
-// BindDiscordErrorResponse
+// BindDiscordErrorResponse 绑定discord账号失败响应体
 type BindDiscordErrorResponse struct {
 	Message string `json:"message"`
 	Code    int    `json:"code"`
 }
 
-// BindDiscordSuccessResponse
+// BindDiscordSuccessResponse 绑定discord账户成功响应体
 type BindDiscordSuccessResponse struct {
 	Location string `json:"location"`
 }
 
-// 测试绑定discord 通过token
+// BindDiscord 测试绑定discord 通过token
 func BindDiscord(client http.Client, address string, dc_token string, cf_clearance string, auth string) (bool, error) {
 	cookies := GetDiscord(client, dc_token, cf_clearance)
 

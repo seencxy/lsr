@@ -8,7 +8,7 @@ import (
 	"regexp"
 )
 
-// 点赞推文
+// FavoriteTwitter 点赞推文
 type FavoriteTwitter struct {
 	Variables struct {
 		TweetID string `json:"tweet_id"`
@@ -16,7 +16,7 @@ type FavoriteTwitter struct {
 	QueryID string `json:"queryId"`
 }
 
-// 转推
+// CreateRetweetRequest 转推
 type CreateRetweetRequest struct {
 	Variables struct {
 		TweetID     string `json:"tweet_id"`
@@ -25,7 +25,7 @@ type CreateRetweetRequest struct {
 	QueryID string `json:"queryId"`
 }
 
-// 实现推文点赞
+// FavoriteTweet 实现推文点赞
 func FavoriteTweet(client http.Client, auth_token string, referer string) int {
 	re := regexp.MustCompile(`status/(\d+)`)
 	matches := re.FindStringSubmatch(referer)

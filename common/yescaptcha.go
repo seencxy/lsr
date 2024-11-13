@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-// 创建任务请求结构体
+// CreateTaskRequest 创建任务请求结构体
 type CreateTaskRequest struct {
 	ClientKey string `json:"clientKey"`
 	Task      struct {
@@ -19,20 +19,58 @@ type CreateTaskRequest struct {
 	} `json:"task"`
 }
 
-// 创建任务响应结构体
+// CreateTaskResponse 创建任务响应结构体
 type CreateTaskResponse struct {
 	TaskId  string `json:"taskId"`
 	ErrorId int    `json:"errorId"`
 }
 
+type CaptchaClient struct {
+	client    *http.Client
+	clientKey string
+	baseUrl   string
+}
+
+func New(_clientKey string) *CaptchaClient {
+	return &CaptchaClient{
+		client:    &http.Client{},
+		clientKey: _clientKey,
+	}
+}
+
+type Options func(*CaptchaClient)
+
+func WithHttpClient(customClient *http.Client) Options {
+	return func(c *CaptchaClient) {
+		c.client = customClient
+	}
+}
+
+func WithBaseUrl(url string) Options {
+	return func(c *CaptchaClient) {
+		c.baseUrl = url
+	}
+}
+
+func NewWithOptions(_clientKey string, _options ...Options) *CaptchaClient {
+	newClient := &CaptchaClient{
+		client:    &http.Client{},
+		clientKey: _clientKey,
+		baseUrl:   "https://cn.yescaptcha.com/createTask",
+	}
+	for _, option := range _options {
+		option(newClient)
+	}
+
+	return newClient
+}
+
 // CreateTask 创建验证码任务
-func CreateTask(client http.Client, clientKey string, websiteURL string, websiteKey string, kind string) (string, error) {
-	// 请求节点
-	url := "https://cn.yescaptcha.com/createTask"
+func (c *CaptchaClient) CreateTask(websiteURL string, websiteKey string, kind string) (string, error) {
 
 	//创建请求参数
 	data := CreateTaskRequest{
-		ClientKey: clientKey,
+		ClientKey: c.clientKey,
 		Task: struct {
 			WebsiteURL string `json:"websiteURL"`
 			WebsiteKey string `json:"websiteKey"`
@@ -50,13 +88,13 @@ func CreateTask(client http.Client, clientKey string, websiteURL string, website
 	}
 
 	// 创建请求
-	request, err := http.NewRequest("POST", url, bytes.NewReader(jsonData))
+	request, err := http.NewRequest("POST", c.baseUrl+"createTask", bytes.NewReader(jsonData))
 	if err != nil {
 		return "", err
 	}
 
 	// 发送请求
-	do, err := client.Do(request)
+	do, err := c.client.Do(request)
 	if err != nil {
 		return "", err
 	}
@@ -82,13 +120,13 @@ func CreateTask(client http.Client, clientKey string, websiteURL string, website
 	return response.TaskId, nil
 }
 
-// 查看任务状态请求体
+// PollingTaskRequest 查看任务状态请求体
 type PollingTaskRequest struct {
 	ClientKey string `json:"clientKey"`
 	TaskId    string `json:"taskId"`
 }
 
-// 查看任务状态响应体
+// PollingTaskResponse 查看任务状态响应体
 type PollingTaskResponse struct {
 	Solution struct {
 		GRecaptchaResponse string `json:"gRecaptchaResponse"`
@@ -97,15 +135,14 @@ type PollingTaskResponse struct {
 	ErrorId int    `json:"errorId"`
 }
 
-// 查看任务状态
-func GetResponse(client http.Client, taskID string, clientKey string) (string, error) {
+// GetResponse 查看任务状态
+func (c *CaptchaClient) GetResponse(taskID string) (string, error) {
 	// 请求节点
 	for times := 0; times < 120; times += 3 {
 		time.Sleep(time.Duration(3) * time.Second)
 
-		url := "https://cn.yescaptcha.com/getTaskResult"
 		data := map[string]interface{}{
-			"clientKey": clientKey,
+			"clientKey": c.clientKey,
 			"taskId":    taskID,
 		}
 
@@ -114,17 +151,17 @@ func GetResponse(client http.Client, taskID string, clientKey string) (string, e
 			return "", err
 		}
 
-		request, err := http.NewRequest("POST", url, bytes.NewReader(jsonData))
+		request, err := http.NewRequest("POST", c.baseUrl+"getTaskResult", bytes.NewReader(jsonData))
 		if err != nil {
 			return "", err
 		}
 		request.Header.Set("Content-Type", "application/json")
 
-		response, err := client.Do(request)
+		response, err := c.client.Do(request)
 		if err != nil {
+			_ = response.Body.Close()
 			return "", err
 		}
-		defer response.Body.Close()
 
 		var responseBody PollingTaskResponse
 		if err := json.NewDecoder(response.Body).Decode(&responseBody); err != nil {
@@ -132,9 +169,52 @@ func GetResponse(client http.Client, taskID string, clientKey string) (string, e
 		}
 
 		if responseBody.Status == "ready" {
+			_ = response.Body.Close()
 			return responseBody.Solution.GRecaptchaResponse, nil
 		}
 	}
 
-	return "", fmt.Errorf("Polling task failed")
+	return "", fmt.Errorf("polling task failed")
+}
+
+func (c *CaptchaClient) GetResponseWithChannel(taskID string, res chan string) error {
+	// 请求节点
+	for times := 0; times < 120; times += 3 {
+		time.Sleep(time.Duration(3) * time.Second)
+
+		data := map[string]interface{}{
+			"clientKey": c.clientKey,
+			"taskId":    taskID,
+		}
+
+		jsonData, err := json.Marshal(data)
+		if err != nil {
+			return err
+		}
+
+		request, err := http.NewRequest("POST", c.baseUrl+"getTaskResult", bytes.NewReader(jsonData))
+		if err != nil {
+			return err
+		}
+		request.Header.Set("Content-Type", "application/json")
+
+		response, err := c.client.Do(request)
+		if err != nil {
+			_ = response.Body.Close()
+			return err
+		}
+
+		var responseBody PollingTaskResponse
+		if err := json.NewDecoder(response.Body).Decode(&responseBody); err != nil {
+			return err
+		}
+
+		if responseBody.Status == "ready" {
+			_ = response.Body.Close()
+			res <- responseBody.Solution.GRecaptchaResponse
+			return nil
+		}
+	}
+
+	return fmt.Errorf("polling task failed")
 }

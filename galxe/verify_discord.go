@@ -8,7 +8,7 @@ import (
 	"net/url"
 )
 
-// 验证推特请求参数
+// VerifyDiscordRequest 验证推特请求参数
 type VerifyDiscordRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {

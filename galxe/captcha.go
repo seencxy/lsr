@@ -13,7 +13,7 @@ import (
 
 // 在galxe中绑定email以及领取奖励需要过captcha
 
-// captcha load响应结构体
+// CaptchaLoadResponse captcha load响应结构体
 type CaptchaLoadResponse struct {
 	Status string `json:"status"`
 	Data   struct {
@@ -51,7 +51,7 @@ type CaptchaLoadResponse struct {
 	} `json:"data"`
 }
 
-// captcha verify响应结构体
+// CaptchaVerifyResponse captcha verify响应结构体
 type CaptchaVerifyResponse struct {
 	Status string `json:"status"`
 	Data   struct {
@@ -71,9 +71,7 @@ type CaptchaVerifyResponse struct {
 	} `json:"data"`
 }
 
-// 获取galxe请求中所需要参数
-
-// CaptchaLoad
+// GetGeetestV4CaptchaLoad 获取galxe请求中所需要参数
 func GetGeetestV4CaptchaLoad(client http.Client) (CaptchaLoadResponse, error) {
 	// 生成uuid作为 challenge 参数
 	challenge := uuid.New().String()
@@ -111,7 +109,6 @@ func GetGeetestV4CaptchaLoad(client http.Client) (CaptchaLoadResponse, error) {
 	return data, nil
 }
 
-// CaptchaVerify
 func GetGeetestV4CaptchaVerify(client http.Client, params CaptchaLoadResponse, w string) (CaptchaVerifyResponse, error) {
 	// 生成callback
 	callback := "geetest_" + fmt.Sprint(time.Now().UnixNano()/1e6)

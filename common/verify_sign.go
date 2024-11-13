@@ -6,7 +6,7 @@ import (
 	"github.com/storyicon/sigverify"
 )
 
-// 实现椭圆曲线签名验证
+// EcdsaVerify 实现椭圆曲线签名验证
 func EcdsaVerify(address string, message string, signature string) (bool, error) {
 	valid, err := sigverify.VerifyEllipticCurveHexSignatureEx(
 		ethcommon.HexToAddress(address),
@@ -16,7 +16,7 @@ func EcdsaVerify(address string, message string, signature string) (bool, error)
 	return valid, err
 }
 
-// 实现eip712签名验证
+// Eip712Verify 实现eip712签名验证
 func Eip712Verify(address string, typedData apitypes.TypedData, sign string) (bool, error) {
 	valid, err := sigverify.VerifyTypedDataHexSignatureEx(
 		ethcommon.HexToAddress(address),

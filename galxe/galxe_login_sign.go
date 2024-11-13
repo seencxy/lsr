@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-// 实现galxe登录签名 获取token
+// GalxeLoginSign 实现galxe登录签名 获取token
 func GalxeLoginSign(client http.Client, address string, prv string) (string, error) {
 	// 下面是原始签名 需要补充自己的签名
 	messageSign := "galxe.com wants you to sign in with your Ethereum account:\n0x435479fBE9B19f9f4776f8Bf4B1c7d1f341572A1\n\nSign in with Ethereum to the app.\n\nURI: https://galxe.com\nVersion: 1\nChain ID: 1\nNonce: EIs5NZLaU2D2xi2Ev\nIssued At: 2023-08-26T06:49:41.277Z\nExpiration Time: 2023-09-02T06:49:41.065Z"
@@ -92,7 +92,7 @@ func GalxeLoginSign(client http.Client, address string, prv string) (string, err
 	return "", errors.New("获取签名失败：请重试")
 }
 
-// galxe获取token请求体
+// GalxeGetTokenRequest galxe获取token请求体
 type GalxeGetTokenRequest struct {
 	OperationName string `json:"operationName"`
 	Variables     struct {
@@ -105,7 +105,7 @@ type GalxeGetTokenRequest struct {
 	Query string `json:"query"`
 }
 
-// galxe获取token响应体
+// GalxeGetTokenResponse galxe获取token响应体
 type GalxeGetTokenResponse struct {
 	Data struct {
 		Signin string `json:"signin"`

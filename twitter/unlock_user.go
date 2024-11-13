@@ -6,7 +6,7 @@ import (
 	"net/url"
 )
 
-// 取关用户
+// UnlockUser 取关用户
 // 实现twitter取关账号
 func UnlockUser(client http.Client, auth_token string, referer string) int {
 	cookies, gid, err := GetTwitterInfo(client, auth_token)

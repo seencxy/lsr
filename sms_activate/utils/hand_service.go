@@ -1,8 +1,8 @@
 package utils
 
 import (
+	"github.com/seencxy/lsr/sms_activate/api"
 	"math"
-	"sms-activate/api"
 )
 
 type OrderBy int

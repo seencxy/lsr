@@ -44,7 +44,7 @@ type CreateRetweetMessageRequest struct {
 	QueryId string `json:"queryId"`
 }
 
-// 对某条推文发起评论
+// CreateRetweetMessage 对某条推文发起评论
 func CreateRetweetMessage(client http.Client, info string, auth_token string, referer string) int {
 	// 获取twitter信息
 	cookies, gid, err := GetTwitterInfo(client, auth_token)

@@ -13,13 +13,13 @@ import (
 	"strings"
 )
 
-// 账号信息
+// Account 账号信息
 type Account struct {
 	Address string `json:"address"`
 	Prv     string `json:"prv"`
 }
 
-// 创建单个以太坊地址
+// CreateOneAddress 创建单个以太坊地址
 func CreateOneAddress() (prv, address string, err error) {
 	//创建私钥
 	privateKey, err := crypto.GenerateKey()
