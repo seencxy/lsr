@@ -3,7 +3,6 @@ package common
 import (
 	"crypto/ecdsa"
 	"encoding/hex"
-	"errors"
 	"fmt"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
@@ -20,21 +19,18 @@ type Account struct {
 }
 
 // CreateOneAddress 创建单个以太坊地址
-func CreateOneAddress() (prv, address string, err error) {
+func CreateOneAddress() (prv, address string) {
 	//创建私钥
-	privateKey, err := crypto.GenerateKey()
-	if err != nil {
-		return "", "", err
-	}
+	privateKey, _ := crypto.GenerateKey()
 	privateKeyBytes := crypto.FromECDSA(privateKey)
 	priv := hexutil.Encode(privateKeyBytes)[2:]
 	publicKey := privateKey.Public()
 	publicKeyECDSA, ok := publicKey.(*ecdsa.PublicKey)
 	if !ok {
-		return "", "", errors.New("cannot assert type: publicKey is not of type *ecdsa.PublicKey")
+		return "", ""
 	}
 	addr := crypto.PubkeyToAddress(*publicKeyECDSA).Hex()
-	return priv, addr, nil
+	return priv, addr
 }
 
 // Mnemonic 创建助记词 /*
