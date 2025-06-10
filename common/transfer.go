@@ -61,7 +61,7 @@ func (t *TransactionClient) StartAutoReconnect() {
 		// 发送一个简单的请求来检查 RPC 是否可用
 		_, err := c.(*ethclient.Client).ChainID(context.Background())
 		if err != nil {
-			t.Client.Store(nil) // 标记为断开，等待重连
+			t.Client.Store(&ethclient.Client{})
 		}
 	}
 }
