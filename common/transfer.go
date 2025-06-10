@@ -58,10 +58,18 @@ func (t *TransactionClient) StartAutoReconnect() {
 			continue
 		}
 
+		// 类型转换前先进行安全检查
+		client, ok := c.(*ethclient.Client)
+		if !ok {
+			t.reconnect()
+			continue
+		}
+
 		// 发送一个简单的请求来检查 RPC 是否可用
-		_, err := c.(*ethclient.Client).ChainID(context.Background())
+		_, err := client.ChainID(context.Background())
 		if err != nil {
 			t.Client.Store(&ethclient.Client{})
+			t.reconnect()
 		}
 	}
 }
