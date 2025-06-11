@@ -60,7 +60,7 @@ func (t *TransactionClient) StartAutoReconnect() {
 
 		// 类型转换前先进行安全检查
 		client, ok := c.(*ethclient.Client)
-		if !ok {
+		if !ok || client == nil {
 			t.reconnect()
 			continue
 		}
